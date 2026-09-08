@@ -1,8 +1,8 @@
 package Taller1.src.model;
 
 public class Queue {
-	public int[] queue;
-	public int front, rear, size, nItems;
+	private int[] queue;
+	private int front, rear, size, nItems;
 	
 	public Queue (int maxSize){
 		size = maxSize;
