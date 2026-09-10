@@ -48,7 +48,7 @@ public class StackController {
                     verCima(stack);
                     break;
                 case 4:
-                    view.showContents("Pila (cima -> base",stack.toArray());
+                    view.showStack("Pila (cima -> base)", stack.toArray());
                     break;
                 case 5:
                     view.showBoolean("¿La pila está vacía?", stack.isEmpty());
@@ -72,7 +72,7 @@ public class StackController {
         int value = view.askInt("Valor a apilar: ");
         try {
             stack.push(value);
-            view.showMessage("Elemento " + value + "apilado");
+            view.showMessage("Elemento " + value + " apilado");
         } catch (IllegalStateException e) {
             view.showError(e.getMessage());
         }

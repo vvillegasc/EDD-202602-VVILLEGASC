@@ -183,6 +183,37 @@ public class ConsoleView {
         System.out.println(contenido);
     }
 
+    /**
+     * Muestra el contenido de una pila en vertical, con la cima arriba y la
+     * base abajo, para que se vea como una pila y no como una lista.
+     *
+     * @param tittle título a mostrar antes del contenido
+     * @param data   datos de la pila (posición 0 = cima), ya extraídos por el
+     *               modelo (via {@code toArray})
+     */
+    public void showStack(String tittle, int[] data){
+        System.out.println(tittle + ":");
+        if(data == null || data.length == 0){
+            System.out.println("  (vacía)");
+            return;
+        }
+        int ancho = 0;
+        for(int valor : data){
+            ancho = Math.max(ancho, String.valueOf(valor).length());
+        }
+        String borde = "  +" + "-".repeat(ancho + 2) + "+";
+        System.out.println(borde);
+        for(int i = 0; i < data.length; i++){
+            String celda = String.valueOf(data[i]);
+            while(celda.length() < ancho){
+                celda = " " + celda;
+            }
+            String marca = (i == 0) ? "  <- cima" : (i == data.length - 1) ? "  <- base" : "";
+            System.out.println("  | " + celda + " |" + marca);
+            System.out.println(borde);
+        }
+    }
+
     /** Muestra el mensaje de despedida al salir de la aplicación. */
     public void showGoodbye(){
         System.out.println();
