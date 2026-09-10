@@ -1,4 +1,4 @@
-package Taller1.src.model;
+package model;
 
 public class Queue {
 	private int[] queue;

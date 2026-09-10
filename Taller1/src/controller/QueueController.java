@@ -1,7 +1,7 @@
-package Taller1.src.controller;
+package controller;
 
-import Taller1.src.model.Queue;
-import Taller1.src.view.ConsoleView;
+import model.Queue;
+import view.ConsoleView;
 
 public class QueueController {
 

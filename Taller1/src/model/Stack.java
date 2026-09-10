@@ -1,4 +1,4 @@
-package Taller1.src.model;
+package model;
 
 public class Stack {
 	private int[] stack;

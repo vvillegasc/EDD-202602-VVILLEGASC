@@ -1,7 +1,7 @@
-package Taller1.src.controller;
+package controller;
 
-import Taller1.src.model.Array;
-import Taller1.src.view.ConsoleView;
+import model.Array;
+import view.ConsoleView;
 
 public class ArrayController {
     private final ConsoleView view;

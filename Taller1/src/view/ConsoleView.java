@@ -1,4 +1,4 @@
-package Taller1.src.view;
+package view;
 import java.util.Scanner;
 
 public class ConsoleView {

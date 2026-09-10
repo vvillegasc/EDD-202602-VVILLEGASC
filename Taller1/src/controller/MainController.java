@@ -1,6 +1,6 @@
-package Taller1.src.controller;
+package controller;
 
-import Taller1.src.view.ConsoleView;
+import view.ConsoleView;
 
 public class MainController {
 

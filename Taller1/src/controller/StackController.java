@@ -1,7 +1,7 @@
-package Taller1.src.controller;
+package controller;
 
-import Taller1.src.model.Stack;
-import Taller1.src.view.ConsoleView;
+import model.Stack;
+import view.ConsoleView;
 
 public class StackController {
 
@@ -27,6 +27,7 @@ public class StackController {
                     break;
                 case 3:
                     verCima(stack);
+                    break;
                 case 4:
                     view.showContents("Pila (cima -> base",stack.toArray());
                     break;
